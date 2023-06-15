@@ -1,0 +1,14 @@
+account_id: ""
+actions:
+  user/oracle:
+    runtime: v2
+    sources: actions
+    specs:
+      triggerAutoTipperBot:
+        description: Trigger auto tipper bot
+        function: oracleAction:triggerAutoTipperBotFn
+        trigger:
+          type: periodic
+          periodic:
+            interval: 5m
+project_slug: ""
